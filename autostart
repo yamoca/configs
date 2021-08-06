@@ -25,7 +25,6 @@ hc keybind $Mod-Shift-c close
 hc keybind $Mod-Return spawn alacritty
 hc keybind $Mod-b spawn firefox
 hc keybind $Mod-space spawn dmenu_run
-hc keybind $Mod-e spawn emacs
 
 # basic movement in tiling and floating mode
 # focusing clients
@@ -116,26 +115,26 @@ hc keybind $Mod-i jumpto urgent
 # theme
 hc attr theme.tiling.reset 1
 hc attr theme.floating.reset 1
-hc set frame_border_active_color '#cc241d'
-hc set frame_border_normal_color '#98971a'
+hc set frame_border_active_color '#504945'
+hc set frame_border_normal_color '#282828'
 hc set frame_bg_normal_color '#d79921'
 hc set frame_bg_active_color '#32302f' #the one that matters
-hc set frame_border_width 0
+hc set frame_border_width 0 #3 
 hc set always_show_frame off # off makes it so you can only see the frame when it is focused
 hc set frame_bg_transparent on
 hc set frame_transparent_width 5 # controls width of frame border only if frame_bg_transparent is on
 hc set frame_gap 33
 
-hc attr theme.title_height 13
+hc attr theme.title_height 0
 hc attr theme.title_font 'Dejavu Sans:pixelsize=12'  # example using Xft
 # hc attr theme.title_font '-*-fixed-medium-r-*-*-13-*-*-*-*-*-*-*'
-hc attr theme.padding_top 3  # space below the title's baseline (i.e. text depth)
-hc attr theme.active.color '#665c54' # bg3 # color of title bar when focused
+hc attr theme.padding_top 7 # space below the title's baseline (i.e. text depth)
+hc attr theme.active.color '#504945' # bg2 # color of title bar when focused
 hc attr theme.title_color '#fbf1c7' # fg0 # color of title text when focused
 hc attr theme.normal.color '#3c3836' #bg1
 hc attr theme.urgent.color '#7811A1dd'
 hc attr theme.normal.title_color '#a88984' #fg4 # color of title text
-hc attr theme.inner_width 0
+hc attr theme.inner_width 0 
 hc attr theme.inner_color black
 hc attr theme.border_width 0
 hc attr theme.floating.border_width 0
